@@ -1,1 +1,285 @@
-/* CSS removed as requested */
+/* Basic Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d3b66;
+  padding: 12px 20px;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Page Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.welcome-text {
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Profile Box */
+.profile-section {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+
+.profile-section h3 {
+  margin-top: 0;
+  color: #0d3b66;
+}
+
+/* Dashboard Statistics */
+.stats-container {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.stat-box {
+  flex: 1;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 12px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.stat-box p {
+  margin: 0 0 8px 0;
+  color: #555;
+  font-size: 13px;
+}
+
+.stat-box h2 {
+  margin: 0;
+  color: #0d3b66;
+  font-size: 24px;
+}
+
+/* Dropdown Filter */
+.filter-wrapper {
+  margin: 15px 0;
+}
+
+.filter-wrapper select {
+  padding: 4px 8px;
+  margin-left: 8px;
+}
+
+/* Company Grid & Card */
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.company-card {
+  width: calc(50% - 6px);
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .company-card {
+    width: 100%;
+  }
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-top h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #0d3b66;
+}
+
+.dream-tag {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.company-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.eligible {
+  color: green;
+  font-weight: bold;
+}
+
+.not-eligible {
+  color: red;
+  font-weight: bold;
+}
+
+.not-eligible-text {
+  color: red;
+  font-size: 13px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+}
+
+.view-link {
+  color: #0d3b66;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn-apply {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+.btn-withdraw {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+/* Details Page */
+.back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #0d3b66;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.details-box {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.details-header h2 {
+  margin: 0;
+  color: #0d3b66;
+}
+
+.details-box p {
+  margin: 6px 0;
+}
+
+.branches {
+  margin: 4px 0 12px 20px;
+}
+
+.details-actions {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* Applications Page */
+.apps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.app-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 12px 15px;
+  border-radius: 4px;
+}
+
+.app-card h3 {
+  margin: 0 0 4px 0;
+  color: #0d3b66;
+}
+
+.app-card p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.empty-box {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 25px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.empty-box p {
+  color: #666;
+}
+
+.browse-link {
+  color: #0d3b66;
+  font-weight: bold;
+}
